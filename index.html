@@ -1,7 +1,66 @@
+<style>
+  @-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+</style>
 <div style="background-color:#f5f5f5;position:absolute;top:0;right:0;bottom:0;left:0;">
-<h1 style="color:#888;text-align:center;padding-top:100px;font-size:5em;">
+<h1 style="color:#888;text-align:center;padding-top:100px;font-size:5em;" class="bounceInDown">
   <span style="color:black;font-weight:normal;font-size:3em;letter-spacing:-20px;">ik</span>
   <span style="color:gold">.</span>
-  <span>Coming Soon</span>
-  <span style="color:gold">:)</span></h1>
+  <span style="display:none">Coming Soon</span>
+  <span style="color:gold;display:none;">:)</span></h1>
 </div>
